@@ -4,7 +4,11 @@
     "description": "Modeling container scanning and associated threats"
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "Sir Gawain"
+      }
+    ],
     "diagrams": [
       {
         "title": "Exploit_Vulnerability_Within_Image",
