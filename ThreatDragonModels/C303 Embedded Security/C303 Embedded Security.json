@@ -10,7 +10,13 @@
         "name": "Donny"
       }
     ],
-    "diagrams": [],
+    "diagrams": [
+      {
+        "title": "Overview",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
     "reviewer": "Walter"
   }
 }
