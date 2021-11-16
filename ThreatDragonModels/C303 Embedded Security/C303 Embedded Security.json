@@ -1,7 +1,8 @@
 {
   "summary": {
     "title": "C303 Embedded Security",
-    "owner": "The Dude"
+    "owner": "The Dude",
+    "description": "Capstone - TempSensor Analysis"
   },
   "detail": {
     "contributors": [
