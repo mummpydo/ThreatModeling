@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "title": "C303 Embedded Security",
+    "owner": "The Dude"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Donny"
+      }
+    ],
+    "diagrams": [],
+    "reviewer": "Walter"
+  }
+}
