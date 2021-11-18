@@ -14,7 +14,271 @@
       {
         "title": "Overview",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 414,
+                "y": 61
+              },
+              "angle": 0,
+              "id": "e24a2d06-64a8-40e3-8b13-1721819576e3",
+              "z": 1,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "edit-binary",
+                  "type": "Tampering",
+                  "description": "ability to access and modify binary code with ghidra",
+                  "mitigation": ""
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "oled_driver"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 523,
+                "y": 267
+              },
+              "angle": 0,
+              "id": "36810433-7228-4554-b86d-ef6fe35e6073",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "temp_sensor"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 777,
+                "y": 276
+              },
+              "angle": 0,
+              "id": "48f2d109-61e4-4872-9dea-825587492c2e",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "evil one"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 447,
+                "y": 4
+              },
+              "target": {
+                "x": 415,
+                "y": 378
+              },
+              "vertices": [
+                {
+                  "x": 364,
+                  "y": 195
+                }
+              ],
+              "id": "9b7b7416-f19d-4498-a3ca-0fda99ea91d2",
+              "z": 4,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 683,
+                "y": 112
+              },
+              "angle": 0,
+              "id": "925c9718-6f80-4f27-922d-33105ac64b01",
+              "z": 5,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "power-supply",
+                  "type": "Denial of service",
+                  "description": ""
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Device"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "e24a2d06-64a8-40e3-8b13-1721819576e3"
+              },
+              "target": {
+                "id": "925c9718-6f80-4f27-922d-33105ac64b01"
+              },
+              "vertices": [],
+              "id": "1c613390-caa9-4343-acb9-34d2d15a8438",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "display input data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "925c9718-6f80-4f27-922d-33105ac64b01"
+              },
+              "target": {
+                "id": "e24a2d06-64a8-40e3-8b13-1721819576e3"
+              },
+              "vertices": [
+                {
+                  "x": 542,
+                  "y": 184
+                }
+              ],
+              "id": "f5a0183f-8a71-43c3-a0b1-7825173a79e3",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "display output data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "48f2d109-61e4-4872-9dea-825587492c2e"
+              },
+              "target": {
+                "id": "925c9718-6f80-4f27-922d-33105ac64b01"
+              },
+              "vertices": [
+                {
+                  "x": 693,
+                  "y": 253
+                }
+              ],
+              "id": "591f31b1-53e0-48f7-b5f1-8c3cecaefb0c",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "copy modified binary",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 1193
+        }
       }
     ],
     "reviewer": "Walter"
